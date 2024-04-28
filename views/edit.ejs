@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>edit file name</title>
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-800 p-10">
+        <a href="/" class="inline-block text-blue-600 mb-5">Go Back Home</a>
+        <form action="/edit" method="post">
+            <input type="text" class="w-full bg-zinc-500 p-2 rounded-md text-zinc-800" placeholder="Previous name" name="previous" value="<%= filename %>">
+            <input type="text" class="w-full bg-zinc-500 p-2 mt-3 rounded-md" placeholder="new name" name="new">
+            <input type="submit" value="Update File Name" class="mt-2 px-3 py-1 bg-yellow-500 rounded-md">
+        </form>
+    </div>
+</body>
+</html>
